@@ -8,12 +8,12 @@
   border: none;
   outline: none;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 html{
   overflow-x: hidden;
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
