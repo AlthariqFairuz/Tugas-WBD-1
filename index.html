@@ -1,115 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Althariq's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets\logo.jpg">
-    <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <title>Althariq's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="assets\logo.jpg">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     </head>
     <body>
         <!-- Header -->
         <header>
             <a href="#" class="logo"> Althariq Fairuz</a>
 
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#experiences">Experiences</a>
-                <a href="#projects">Projects</a>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav id="navbar">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#experiences" class="nav-link">Experiences</a>
+                <a href="#projects" class="nav-link">Projects</a>
             </nav>
         </header>
 
         <!-- Home Page -->
         <section id="home" class="home">
-            <div class="home-img">
-                <img src="assets/20240617_085717.jpg" alt="Althariq Fairuz">
-            </div>
-
-            <div class="home-content">
-                <h1>Hi! I am Muhammad Althariq Fairuz</h1>
-                <h3 class="typing-text"> A passioante computer science student at Institut Teknologi Bandung</h3> 
-                <h3 class="typing-text"> Im a <span class="typed-text"></span></h3> 
-                <div class="social-icons">
-                    <h3>Find Me On</h3>
-                    <a href="https://www.linkedin.com/in/muhammad-althariq-fairuz-10503a247/?original_referer=https%3A%2F%2Fwww%2Ebing%2Ecom%2F&originalSubdomain=id"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/AlthariqFairuz"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.kaggle.com/althariqfairuz"><i class="fa-brands fa-kaggle"></i></a>
-                    <a href="https://www.instagram.com/althariqfairuz/"><i class="fa-brands fa-instagram"></i></a>
+            <div class="home-content-wrapper">
+                <div class="home-img" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="assets/20240617_085717.jpg" alt="Althariq Fairuz">
                 </div>
-                <a href="https://drive.google.com/file/d/1DGCg7UW5TyYrngRhnMqbtPQxcr5yf3Ee/view?usp=sharing" class="button">Download CV</a>
+
+                <div class="home-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                    <h1>Hi! I am <span>Muhammad Althariq Fairuz</span></h1>
+                    <h3>A passionate computer science student at Institut Teknologi Bandung</h3> 
+                    <h3 class="typing-text">I'm a <span class="typed-text"></span></h3> 
+                    
+                    <div class="social-icons">
+                        <h3>Find Me On</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/muhammad-althariq-fairuz-10503a247/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AlthariqFairuz" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.kaggle.com/althariqfairuz" aria-label="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+                            <a href="https://www.instagram.com/althariqfairuz/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <a href="https://drive.google.com/file/d/1RyCnhqUYGla1w2jXS6l6G_4cVzcZXmCi/view?usp=sharing" class="button">
+                        <span class="button-text">Download CV</span>
+                        <i class="fas fa-download"></i>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Experiences -->
         <section id="experiences" class="experiences">
-            <h1 class="heading">Experiences</h1>
-            <div class="timeline">
-                    <h4> Artificial Intelligence Lab Assistant at Institut Teknologi Bandung </h4>
-                    <span>September 2024 - present</span>
-                    <p>Lab Assistant for courses: Computational Logic, Artificial Intelligence, and Machine Learning.</p>
+            <h1 class="heading">My <span>Experiences</span></h1>
+            
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Artificial Intelligence Lab Assistant</h4>
+                        <p class="timeline-location">Institut Teknologi Bandung</p>
+                        <span class="timeline-date">September 2024 - present</span>
+                        <p class="timeline-description">Lab Assistant for courses: Computational Logic, Artificial Intelligence, and Machine Learning.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Computational Thinking Supervisor</h4>
+                        <p class="timeline-location">Comlabs-USDI ITB</p>
+                        <span class="timeline-date">September 2024 - December 2024</span>
+                        <p class="timeline-description">Supervisor for Computational Thinking practical sessions.</p>
+                    </div>
+                </div>
             </div>
-            <div class="timeline">
-                    <h4> Comlabs-USDI ITB </h4>
-                    <span>September 2024 - December 2024</span>
-                    <p>Supervisor for Computational Thinking practical sessions.</p>
-            </div>
-            <!-- <div class="timeline">
-                    <h4> Arkavidia 9.0 </h4>
-                    <span>December 2024 - present</span>
-                    <p>Responsible for validating and testing the dataset that will be used for final selection in Datavidia Competition to ensure its clarity and technical
-                        feasibility.</p>
-            </div> -->
         </section>
 
         <!-- Projects -->
         <section id="projects" class="projects">
-            <h1 class="heading">Projects</h1>
+            <h1 class="heading" data-aos="fade-up">My <span>Projects</span></h1>
+            
             <div class="project-items">
-
-                <article class="project-item">
-                    <a href="https://github.com/AlthariqFairuz/linkinpurry" target="_blank">
-                        <img src="assets\linkinpurry.png" alt="LinkInPurry">
-                        <h1>LinkInPurry</h1>
-                        <p>This project contains all of my analysis on some kaggle datasets.</p>
+                <!-- <article class="project-item" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://github.com/AlthariqFairuz/linkinpurry" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="assets\linkinpurry.png" alt="LinkInPurry">
+                        </div>
+                        <div class="project-content">
+                            <h1>LinkInPurry</h1>
+                            <p>This project contains all of my analysis on some kaggle datasets.</p>
+                            <div class="project-tech">
+                                <span>Data Analysis</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
                     </a>
-                </article>
+                </article> -->
 
-                <article class="project-item">
-                    <a href="https://github.com/randyver/skill-builder-AI" target="_blank">
-                        <img src="assets\skill-builder.png" alt="SkillBuilderAI: Personalized Learning Platform">
-                        <h1>SkillBuilderAI: Personalized Learning Platform</h1>
-                        <p>A personalized learning platform designed to help users discover, develop, and master IT skills that are aligned with their interests and abilities.</p>
+                <article class="project-item" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://github.com/randyver/skill-builder-AI" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="assets\skill-builder.png" alt="SkillBuilderAI: Personalized Learning Platform">
+                        </div>
+                        <div class="project-content">
+                            <h1>SkillBuilderAI: Personalized Learning Platform</h1>
+                            <p>A personalized learning platform designed to help users discover, develop, and master IT skills that are aligned with their interests and abilities.</p>
+                            <div class="project-tech">
+                                <span>AI</span>
+                                <span>Web Dev</span>
+                            </div>
+                        </div>
                     </a>
                 </article>     
 
-                <article class="project-item">
-                    <a href="https://github.com/AlthariqFairuz/trash-classification" target="_blank">
-                        <img src="assets\mlmodel.jpg" alt="Trash Classification">
-                        <h1>Trash Classification</h1>
-                        <p>This project implements a Convolutional Neural Network (CNN) model for automated trash classification using the TrashNet dataset.</p>
+                <article class="project-item" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="https://github.com/AlthariqFairuz/trash-classification" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="assets\mlmodel.jpg" alt="Trash Classification">
+                        </div>
+                        <div class="project-content">
+                            <h1>Trash Classification</h1>
+                            <p>This project implements a Convolutional Neural Network (CNN) model for automated trash classification using the TrashNet dataset.</p>
+                            <div class="project-tech">
+                                <span>CNN</span>
+                                <span>Deep Learning</span>
+                            </div>
+                        </div>
                     </a>
                 </article>
 
-                <article class="project-item">
-                    <a href="https://github.com/AlthariqFairuz/Natural-Language-Processing-with-Disaster-Tweets-Analysis" target="_blank">
-                        <img src="assets\sentiment-analysis.png" alt="Natural Language Processing with Disaster Tweets Analysis">
-                        <h1>Natural Language Processing with Disaster Tweets Analysis</h1>
-                        <p>This project presents a comprehensive analysis of the Disaster Tweets dataset from Kaggle, exploring how natural language processing
-                            techniques can be used to identify tweets about real disasters.</p>
+                <article class="project-item" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="https://github.com/AlthariqFairuz/Natural-Language-Processing-with-Disaster-Tweets-Analysis" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="assets\sentiment-analysis.png" alt="Natural Language Processing with Disaster Tweets Analysis">
+                        </div>
+                        <div class="project-content">
+                            <h1>Natural Language Processing with Disaster Tweets Analysis</h1>
+                            <p>This project presents a comprehensive analysis of the Disaster Tweets dataset from Kaggle, exploring how natural language processing techniques can be used to identify tweets about real disasters.</p>
+                            <div class="project-tech">
+                                <span>NLP</span>
+                                <span>ML</span>
+                            </div>
+                        </div>
                     </a>
                 </article>
 
-                <article class="project-item">
-                    <a href="https://github.com/AlthariqFairuz/QA-RAG-with-deepseek" target="_blank">
-                        <img src="assets\QA-RAG.png" alt="A* QA-RAG with DeepSeek">
-                        <h1>QA-RAG with DeepSeek</h1>
-                        <p>This project is a Question Answering system built using Retrieval Augmented Generation (RAG) with DeepSeek, a frontend built with Next.js,
-                            a backend powered by LangChain with FastAPI, and model interactions handled by Ollama.</p>
+                <article class="project-item" data-aos="zoom-in" data-aos-delay="500">
+                    <a href="https://github.com/AlthariqFairuz/QA-RAG-with-deepseek" target="_blank" class="project-link">
+                        <div class="project-img">
+                            <img src="assets\QA-RAG.png" alt="A* QA-RAG with DeepSeek">
+                        </div>
+                        <div class="project-content">
+                            <h1>QA-RAG with DeepSeek</h1>
+                            <p>This project is a Question Answering system built using Retrieval Augmented Generation (RAG) with DeepSeek, a frontend built with Next.js, a backend powered by LangChain with FastAPI, and model interactions handled by Ollama.</p>
+                            <div class="project-tech">
+                                <span>RAG</span>
+                                <span>LLM</span>
+                                <span>Next.js</span>
+                            </div>
+                        </div>
                     </a>
                 </article>
             </div>
         </section>  
         
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Muhammad Althariq Fairuz. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/muhammad-althariq-fairuz-10503a247/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AlthariqFairuz" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to top button -->
+        <div class="scroll-top-btn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        
+        <script>
+            AOS.init({
+                once: false,
+                mirror: true,
+            });
+            
+            // Mobile menu toggle
+            const menuBtn = document.querySelector('.menu-btn');
+            const navbar = document.getElementById('navbar');
+            
+            menuBtn.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuBtn.classList.toggle('active');
+            });
+            
+            // Close navbar when clicking a nav link (mobile)
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    navbar.classList.remove('active');
+                    menuBtn.classList.remove('active');
+                });
+            });
+            
+            // Typing animation effect
+            const typedTextSpan = document.querySelector('.typed-text');
+            const roles = ["ML Engineer", "Data Scientist"];
+            let roleIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingDelay = 100;
+            let erasingDelay = 50;
+            let newTextDelay = 2000;
+            
+            function typeEffect() {
+                const currentRole = roles[roleIndex];
+                const currentText = isDeleting 
+                    ? currentRole.substring(0, charIndex - 1) 
+                    : currentRole.substring(0, charIndex + 1);
+                
+                if (!isDeleting && charIndex < currentRole.length) {
+                    charIndex++;
+                    setTimeout(typeEffect, typingDelay);
+                } else if (isDeleting && charIndex > 0) {
+                    charIndex--;
+                    setTimeout(typeEffect, erasingDelay);
+                } else {
+                    isDeleting = !isDeleting;
+                    if (!isDeleting) {
+                        roleIndex = (roleIndex + 1) % roles.length;
+                        setTimeout(typeEffect, newTextDelay);
+                    } else {
+                        setTimeout(typeEffect, typingDelay);
+                    }
+                }
+                
+                typedTextSpan.textContent = currentText;
+            }
+            
+            // Start typing effect on page load
+            document.addEventListener('DOMContentLoaded', () => {
+                setTimeout(typeEffect, newTextDelay);
+            });
+            
+            // Scroll to top button
+            const scrollTopBtn = document.querySelector('.scroll-top-btn');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 200) {
+                    scrollTopBtn.classList.add('show');
+                } else {
+                    scrollTopBtn.classList.remove('show');
+                }
+            });
+            
+            scrollTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
     </body>
 </html>
