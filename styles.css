@@ -685,7 +685,7 @@ span {
   .home-content-wrapper {
     gap: 5rem;
   }
-  
+
   .home-img {
     width: 30rem;
     height: 30rem;
@@ -704,6 +704,12 @@ span {
   .experiences {
     margin: 5rem 5%;
     padding: 4rem;
+  }
+
+  .typing-text {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .home-content-wrapper {
@@ -732,6 +738,8 @@ span {
   .menu-btn {
     display: flex;
   }
+
+
   
   nav {
     position: fixed;
